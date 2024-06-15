@@ -1,14 +1,15 @@
 # ELABORACIÓN DEL PROYECTO
-1. Limpieza y Transofación
-2. Analisis de datos
-3. Visualización de datos
-4. Ciencia de datos
-5. Ingenieria de Datos
+TEMA 1. Limpieza y Transofación
+TEMA 2. Analisis de datos
+TEMA 3. Visualización de datos
+TEMA 4. Ciencia de datos
+TEMA 5. Ingenieria de Datos
 
 ![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/077e7e10-8d96-4135-a680-f0a276608c31)
 
 
 INTRODUCCIÓN
+
 El procesamiento y análisis de grandes volúmenes de datos es una tarea 
 compleja y multifacética que abarca varias disciplinas esenciales para extraer 
 información valiosa de datos en bruto. En este contexto, el uso de RStudio, una 
@@ -21,26 +22,27 @@ la eliminación de errores, inconsistencias y duplicados, así como su conversi�
 un formato adecuado. Este proceso incluye tareas como la normalización de datos, 
 el relleno de valores faltantes y la corrección de errores, asegurando que los datos 
 sean precisos y útiles para el análisis posterior.
+
 El análisis de datos es el siguiente paso, donde se examinan los datos limpios 
 y transformados para descubrir patrones, tendencias y relaciones significativas. Con 
 RStudio, se pueden realizar análisis descriptivos, inferenciales, predictivos y 
 prescriptivos, utilizando una amplia gama de herramientas estadísticas y algoritmos 
 de machine learning. Esta fase es crucial para tomar decisiones informadas y 
-desarrollar estrategias basadas en evidencia.
-La visualización de datos, otro componente esencial, implica la 
+desarrollar estrategias basadas en evidencia. La visualización de datos, otro componente esencial, implica la 
 representación gráfica de los datos para facilitar su interpretación. RStudio, con su 
 capacidad para generar gráficos y diagramas sofisticados, permite crear 
 visualizaciones efectivas que ayudan a los usuarios a comprender rápidamente las 
 complejidades de los datos. Desde gráficos de barras y líneas hasta dashboards 
 interactivos y mapas geográficos, RStudio ofrece diversas herramientas para 
 comunicar hallazgos de manera clara y concisa.
+
 En el ámbito de la ciencia de datos, RStudio se utiliza para aplicar métodos 
 científicos, procesos, algoritmos y sistemas que extraen conocimiento de los datos. 
 Los científicos de datos pueden desarrollar y validar modelos predictivos, utilizar 
 algoritmos de machine learning y aplicar técnicas de minería de datos para descubrir 
-2
 relaciones ocultas y patrones complejos. La flexibilidad y las capacidades 
 avanzadas de RStudio son esenciales para llevar a cabo estos análisis profundos.
+
 Finalmente, la ingeniería de datos se enfoca en la construcción y optimización 
 de sistemas para recopilar, almacenar y procesar grandes volúmenes de datos. Con 
 RStudio, los ingenieros de datos pueden diseñar y mantener infraestructuras de 
@@ -48,6 +50,8 @@ datos robustas, implementando pipelines de datos y optimizando el rendimiento de
 los sistemas de procesamiento. Tecnologías como Hadoop y Spark se integran 
 fácilmente con RStudio, proporcionando una base sólida para el flujo continuo de 
 datos
+
+# TEMA 1
 
 DESARROLLO
 A. LIMPIEZA Y TRANSFORMACIÓN DE DATOS:
@@ -73,6 +77,9 @@ valores con el fin de inspeccionar la variable Industry en busca de valores
 faltantes. 
 Para inspeccionar la observación número 64, nos muestra en el marco 
 de datos.
+
+# TEMA 2
+
 B. ANALISIS DE DATOS
 La base de datps utilizada esta denominada como 
 “data(proyecto_final)”.
@@ -129,6 +136,9 @@ siguientes comandos, por ejemplo:
 • max(wage)
 • var(wage)
 • sd(wage)
+
+# TEMA 3
+
 C. VISUALIZACIÓN DE DATOS
 Con la función “hist (columna x, freq = FALSE)” se puede analizar el 
 histograma de los datos en validación para determinar la toma de decisiones 
@@ -160,6 +170,8 @@ campos en análisis.
 ![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/4a54aad5-8539-44b4-8c99-ef4919d24322)
 
 9
+# TEMA 4
+
 D. CIENCIA DE DATOS
 1. REGRECIÓN LINEAL
 
@@ -207,6 +219,9 @@ variabilidad en la variable dependiente).
 predictores, aún peor).
 • F-statistic: 0.5718 en 5 y 9986 grados de libertad (df) con un p-valor 
 de 0.7217 (el modelo en conjunto no es significativo).
+
+# TEMA 5 
+
 E. INGENIERIA DE DATOS
 1. Instalación y carga de las librerías
 Primero, es necesario instalar y cargar las librerías que utilizaremos 
@@ -365,23 +380,29 @@ write.csv(summary_stats, 'summary_stats.csv', row.names = FALSE)
 18
 19
 CONCLUSIONES
+
 El uso de RStudio en el procesamiento y análisis de datos abarca desde la 
 limpieza y transformación de datos hasta la visualización, ciencia e ingeniería de 
 datos. Esta herramienta integral proporciona un entorno robusto y flexible que 
 facilita el desarrollo y la implementación de cada uno de estos componentes clave. 
+
 Al aprovechar las capacidades avanzadas de RStudio, las organizaciones pueden 
 transformar datos crudos en información valiosa y accionable, lo que impulsa 
-decisiones estratégicas fundamentadas en datos.
+decisiones estratégicas fundamentadas en datos. 
+
 La limpieza y transformación de datos son pasos fundamentales en el 
 proceso de análisis, ya que aseguran la calidad y la precisión de los datos. Datos 
 limpios y bien transformados son la base sobre la cual se construyen análisis fiables 
 y modelos predictivos precisos.
+
 El análisis y la visualización de datos son cruciales para interpretar y 
 comunicar los hallazgos de manera efectiva. RStudio ofrece una variedad de 
 herramientas que facilitan el análisis estadístico y la creación de visualizaciones 
 claras y comprensibles.
 20
+
 RECOMENDACIONES
+
 Es crucial que las organizaciones implementen procedimientos 
 automatizados en RStudio para la limpieza de datos, lo que no solo ahorra tiempo 
 sino que también reduce los errores humanos y mejora la consistencia y precisión 
@@ -389,6 +410,7 @@ de los datos procesados. La automatización puede incluir el uso de scripts y
 funciones integradas que simplifican y estandarizan las tareas repetitivas, 
 permitiendo a los analistas centrarse en aspectos más complejos del análisis de 
 datos.
+
 Es esencial que las organizaciones capaciten continuamente a sus analistas 
 y científicos de datos en las últimas técnicas y herramientas de análisis y 
 visualización disponibles en RStudio. La actualización constante de habilidades 
@@ -396,6 +418,7 @@ asegura que el equipo pueda utilizar plenamente las capacidades avanzadas de la
 herramienta, mejorando la eficiencia y la calidad de los análisis y visualizaciones 
 producidas. La capacitación puede incluir talleres, cursos en línea y conferencias 
 especializadas.
+
 Para asegurar la escalabilidad y adaptabilidad de sus sistemas de datos, las 
 organizaciones deben adoptar una arquitectura escalable que pueda manejar 
 volúmenes crecientes de datos utilizando herramientas compatibles con RStudio. 
