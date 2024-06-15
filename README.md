@@ -75,20 +75,35 @@ La base de datps utilizada esta denominada como
 “data(proyecto_final)”.
 Con esta función podemos verificar la impresión de nuestra tabla para 
 poder revisar los datos que vamos analizar y poder entender que es lo que 
-necesitamos analizar. 
+necesitamos analizar.
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/2aa96da7-7c98-4ae3-9ef2-239199ab55d9)
+
 4
 Por medio de este código se puede visualizar toda la información de 
 la base de datos para poder analizar la información que necesitamos 
 desarrollar.
 Con la función “STR” se puede visualizar todas las variables que 
 contiene nuestra base de datos que estamos analizando.
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/91c96d57-d8f8-45bd-97e5-2c8ba4559a6b)
+
 La función “HEAD” muestra las primeras 5 variables que se tienen en 
 la base de datos como se muestra en la siguiente imagen: 
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/9ac6303e-f392-488d-9340-4800cb349e7b)
+
 5
 La función “TAIL” nos muestra las ultimas variables de la base de 
 datos.
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/e21d8783-7ca8-4f1f-b278-f0aafbe7d061)
+
 La función “summary” nos muestra el resumen de todas variables de 
 nuestra base de datos.
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/46a58cba-3817-45d4-9e11-6e97db2ccef5)
+
 Lo interesante de la función “attach” es que nos permite ver el resumen 
 especifico de la columna que deseamos revisar lo que nos da una proyección 
 de análisis más limpia. Por ejemplo: con la función “summary() más la 
@@ -97,6 +112,9 @@ se muestra en la siguiente imagen:
 6
 Min. 1st Qu. Median Mean 3rd Qu. Max.
  1.0 990.8 1992.0 1998.6 3000.0 4000.0
+
+ ![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/d26a53f7-7aad-4005-bb69-1eb642728d41)
+
 Con el comando “summary” sucesivamente se puede ir analizando las 
 columnas que se deseen, para que analice un campo en específico lo cual 
 resulta como beneficio para el análisis que se requiera, podemos usar los 
@@ -112,23 +130,38 @@ C. VISUALIZACIÓN DE DATOS
 Con la función “hist (columna x, freq = FALSE)” se puede analizar el 
 histograma de los datos en validación para determinar la toma de decisiones 
 de forma efectiva. 
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/86478246-3c75-40bd-a725-046d593bf693)
+
 7
 La función “hist(log(columna x), freq = FALSE)” permite agrupar la 
 gráfica de la siguiente forma lo cual resulta de beneficio para el análisis en 
 gestión. 
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/cb4f19fd-1180-446a-963a-bfc14d390570)
+
 Con la función “lines (density (log (Columna x)), col = 4)” se puede 
 agregar líneas en la gráfica lo que resulta relevante para el análisis de datos, 
 como se muestra a continuación:
 • lines(density(log(columna x)), col = 3)
 • lines(density(log(columna x)), col = 2)
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/8efd5fd7-0e3f-4fdd-aaf6-b47726c7b1bf)
+
 8
 Variables Categóricas
 Para determinar variables categóricas se usa el comando “summary
 (columna x)” según la columna que se necesita analizar para graficar los 
 campos en análisis. 
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/4a54aad5-8539-44b4-8c99-ef4919d24322)
+
 9
 D. CIENCIA DE DATOS
 1. REGRECIÓN LINEAL
+
+2. ![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/ee6771e5-668d-47f9-b840-f82771d3852a)
+
 Interpretación de los Coeficientes
 1. Intercept (Intercepto):
 o Estimate: 1832.89
@@ -188,12 +221,18 @@ install.packages("rvest")
 install.packages("dplyr")
 install.packages("stringr")
 install.packages("tidyverse")
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/033714cc-4440-4d9b-b0ae-471cb5693ed7)
+
 library(rvest)
 library(dplyr)
 library(stringr)
 library(tidyverse)
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/e0eed590-3f6e-4d25-b5a5-1cae29562176)
+
 12
-2. Leer una página web:
+3. Leer una página web:
 Luego se utiliza la función `read_html()` para leer el contenido de una 
 página web. En este ejemplo, se usará la página de Wikipedia sobre el 
 lenguaje de programación R.
@@ -201,13 +240,24 @@ El código para leer la página web es el siguiente:
 url <- 'https://en.wikipedia.org/wiki/R_(programming_language)'
 webpage <- read_html(url)
 Quedando de la siguiente manera:
-3. Extraer datos específicos
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/0e343987-44d7-4fef-9c60-b14caaee0025)
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/aaa79e90-4bd4-4c10-9904-87d145134a3d)
+
+4. Extraer datos específicos
 Luego extraemos datos específicos de la página web. En este caso, 
 queremos obtener los párrafos ocho, veinticuatro y cuarenta de la sección 
 principal y la tabla de información (infobox) sobre el lenguaje R.
 Para saber cuántos párrafos tiene la página web de donde se está 
 sacando la información se puede utilizar el siguiente código:
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/be53c093-2d77-4f3a-b50c-a4be4452d301)
+
 Dando como resultado lo siguiente:
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/83a021f7-7780-4006-8bdd-1e29dd1c2cb2)
+
 Este código se puede utilizar siempre para saber cuántos párrafos va 
 tener la página web de donde se esté sacando la información y cómo
 podemos observar esta página cuenta con 91 párrafos.
@@ -220,6 +270,9 @@ Eight_paragraph <- webpage %>%
  html_node('p') %>%
  html_text()
 print(Eight_paragraph)
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/2a7dc6b1-9ae6-4629-a917-f012a4bb78a5)
+
 Luego se tiene la opción de ir a extraer la tabla de información (infobox)
 Primero identificamos la tabla de información (infobox) usando el 
 selector CSS adecuado y la convertimos en un dataframe para facilitar su 
@@ -229,8 +282,11 @@ infobox <- webpage %>%
 html_node('.infobox') %>%
  html_table()
 print(infobox)
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/c79e82d3-05cf-4273-a7ff-e4f536a78cfe)
+
 14
-4. Limpiar y estructurar los datos:
+6. Limpiar y estructurar los datos:
 Después de extraer los datos, a menudo es necesario limpiarlos y 
 estructurarlos adecuadamente para su análisis.
 El texto extraído puede contener espacios innecesarios que podemos 
@@ -238,6 +294,9 @@ eliminar utilizando la función `str_trim()` de la librería `stringr`.
 El código a utilizar será el siguiente:
 Eight_paragraph_clean <- str_trim(Eight_paragraph)
 print(Eight_paragraph_clean)
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/83fd07fc-8948-4052-a220-25e0546cced2)
+
 Luego podemos limpiar y estructurar la tabla de información, donde las 
 tablas pueden requerir limpieza adicional, como renombrar columnas y filtrar 
 filas innecesarias. Utilizamos funciones de `dplyr` para este propósito.
@@ -247,7 +306,10 @@ infobox_clean <- infobox %>%
  rename(Attribute = 1, Value = 2) %>%
  filter(!is.na(Attribute))
 print(infobox_clean)
-5. Análisis de Datos
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/d1f27ae6-ab37-4931-a800-35dd5e4d86ad)
+
+7. Análisis de Datos
 Luego realizamos un análisis de datos para extraer medidas de 
 resumen estadístico. Para este ejemplo, agregaremos una columna ficticia 
 de valores numéricos a la tabla para ilustrar el proceso.
@@ -260,6 +322,9 @@ infobox_clean$NumericValue <- sample(1:100, nrow(infobox_clean), replace
 print(infobox_clean)
 16
 Donde quedará de la siguiente forma:
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/cf031be7-c923-40eb-bee6-9d1fb36fa41c)
+
 Luego se realizó el cálculo de las medidas de resumen estadístico, 
 donde utilizamos `summarise()` de `dplyr` para calcular medidas como la 
 media, mediana, desviación estándar, entre otros.
@@ -273,8 +338,11 @@ summary_stats <- infobox_clean %>%
  )
 print(summary_stats)
 Donde nos mostrará el siguiente resultado:
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/edb4b6b4-9b58-4718-bf15-28c635ff09cc)
+
 17
-6. Guardar los datos y resultados del análisis
+9. Guardar los datos y resultados del análisis
 Finalmente, guardamos los datos extraídos y los resultados del 
 análisis en archivos CSV para su uso posterior.
 El primer código nos servirá para poder guardar cada uno de los 
@@ -286,6 +354,11 @@ write.csv(infobox_clean, 'infobox_R.csv', row.names = FALSE)
 Y el tercer código nos servirá para guardar las medidas de resumen 
 estádistico en archivo CSV (Excel)
 write.csv(summary_stats, 'summary_stats.csv', row.names = FALSE)
+
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/df9fe611-7542-4479-b2f0-98cb07807121)
+
+![Uploading image.png…]()
+
 18
 19
 CONCLUSIONES
