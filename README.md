@@ -5,6 +5,9 @@
 4. Ciencia de datos
 5. Ingenieria de Datos
 
+![image](https://github.com/YoseSanchez/PROYECTO-FINAL/assets/172731216/077e7e10-8d96-4135-a680-f0a276608c31)
+
+
 INTRODUCCIÓN
 El procesamiento y análisis de grandes volúmenes de datos es una tarea 
 compleja y multifacética que abarca varias disciplinas esenciales para extraer 
